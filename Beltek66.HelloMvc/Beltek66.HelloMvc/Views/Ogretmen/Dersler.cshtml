@@ -1,0 +1,47 @@
+﻿@model Ogretmen
+@{
+    ViewData["Title"] = "Dersler";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Dersler</h1>
+
+<div class="row">
+<div class="col-md-4">
+    <form asp-action="Edit">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="OgretmenId" />
+        <div class="form-group">
+            <label asp-for="FullName" class="control-label"></label>
+            <input asp-for="FullName" class="form-control" disabled/>
+            <span asp-validation-for="FullName" class="text-danger"></span>
+        </div>
+             <p> </p>
+        <div class="form-group">
+            <label class="control-label">Dersler</label>
+            <table>
+                <tbody>
+                    @{ int i = 0;}
+                    <tr>
+                        @foreach (var ders in @Model.OgretmenDers)
+                        {
+                            <td>
+                                <input type="hidden" name="ders[@i].DersId" asp-for="@ders.Ders.DersAd" class="form-control" disabled />
+                               <input type="text" name="ders[@i].Ders.DersAd" asp-for="@ders.Ders.DersAd" class="form-control" disabled/>
+                              
+                            </td> 
+                 
+                            i++;
+                        }
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </form>
+</div>
+</div>
+<p> </p>
+<div>
+   <a class="link-secondary" asp-action="Index">Back to List</a>
+</div>

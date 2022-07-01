@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Beltek66.HelloMvc.Models.Ogretmen>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Öğretmen Anasayfası</h1>
+
+<p>
+    <a class="btn btn-outline-secondary btn-sm" asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Ad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Soyad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bolum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Yas)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Soyad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bolum.BolumAd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Yas)
+            </td>
+            <td>
+                <a  class="link-secondary"asp-action="Dersler" asp-route-id="@item.OgretmenId">Dersler</a> |
+                <a class="link-secondary" asp-action="Edit" asp-route-id="@item.OgretmenId">Edit</a> |
+                <a class="link-secondary" asp-action="Details" asp-route-id="@item.OgretmenId">Details</a> |
+                <a class="link-danger" asp-action="Delete" asp-route-id="@item.OgretmenId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

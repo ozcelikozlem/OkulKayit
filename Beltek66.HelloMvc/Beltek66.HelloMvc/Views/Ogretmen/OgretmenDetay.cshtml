@@ -1,0 +1,35 @@
+﻿@model Ogretmen
+@{
+    ViewData["Title"] = "OgretmenDetay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>OgretmenDetay</h1>
+<form asp-controller="Ogretmen" asp-action="OgretmenDetay" method="post">
+
+    <div class="mb-3">
+    <label for="Ad" class="form-label">Ad:</label>
+    <input class="form-control" asp-for="Ad" type="text" />
+    </div>
+
+    <div class="mb-3">
+    <label for="Soyad" class="form-label">Soyad:</label>
+    <input class="form-control" asp-for="Soyad" type="text" />
+    </div>
+
+    <div class="mb-3">
+    <label for="Bolum" class="form-label">Bölüm:</label>
+    <input class="form-control" asp-for="Bolum" type="text" />
+    </div>
+
+    <div class="mb-3">
+    <label for="Yas" class="form-label">Yaş:</label>
+    <input class="form-control" asp-for="Yas" type="number" />
+    </div>
+
+    <input asp-for="OgretmenId" type="hidden" />
+
+    <input type="submit" value="Güncelle" class="btn btn-outline-dark"  />
+
+
+</form>

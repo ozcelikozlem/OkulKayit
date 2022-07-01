@@ -1,0 +1,34 @@
+﻿@model Ogretmen
+@{
+    ViewData["Title"] = "OgretmenEkle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>OgretmenEkle</h1>
+
+<form asp-controller="Ogretmen" asp-action="OgretmenEkle" method="post"> @* etiket yardımcıları tag-helper*@
+    <div class="mb-3">
+    <label for="Ad" class="form-label">Ad:</label>
+    
+    <input class="form-control" type="text"  asp-for="Ad" />
+    </div>
+    <div class="mb-3">
+    <label class="form-label">Soyad:</label>
+
+    @Html.TextBoxFor(o=>o.Soyad,new{@class="form-control"}) @*html-helper iis render yapıyor html ye çeviriyor*@
+    </div>
+      <div class="mb-3">
+    <label for="Bolum" class="form-label">Bölüm:</label>
+    
+    <input class="form-control" type="text"  asp-for="Bolum" />
+    </div>
+
+    <div class="mb-3">
+    <label class="form-label">Yaş:</label>
+    <input class="form-control" type="number" name="Yas" id="Yas" />
+    </div>
+    <input type="submit" value="Kaydet" class="btn btn-outline-success" />
+
+
+</form>
+

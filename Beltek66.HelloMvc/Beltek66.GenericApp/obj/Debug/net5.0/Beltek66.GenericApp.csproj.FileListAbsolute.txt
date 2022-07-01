@@ -1,0 +1,16 @@
+C:\Users\user\source\repos\Beltek66.HelloMvc\Beltek66.GenericApp\bin\Debug\net5.0\Beltek66.GenericApp.exe
+C:\Users\user\source\repos\Beltek66.HelloMvc\Beltek66.GenericApp\bin\Debug\net5.0\Beltek66.GenericApp.deps.json
+C:\Users\user\source\repos\Beltek66.HelloMvc\Beltek66.GenericApp\bin\Debug\net5.0\Beltek66.GenericApp.runtimeconfig.json
+C:\Users\user\source\repos\Beltek66.HelloMvc\Beltek66.GenericApp\bin\Debug\net5.0\Beltek66.GenericApp.runtimeconfig.dev.json
+C:\Users\user\source\repos\Beltek66.HelloMvc\Beltek66.GenericApp\bin\Debug\net5.0\Beltek66.GenericApp.dll
+C:\Users\user\source\repos\Beltek66.HelloMvc\Beltek66.GenericApp\bin\Debug\net5.0\Beltek66.GenericApp.pdb
+C:\Users\user\source\repos\Beltek66.HelloMvc\Beltek66.GenericApp\obj\Debug\net5.0\Beltek66.GenericApp.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\Beltek66.HelloMvc\Beltek66.GenericApp\obj\Debug\net5.0\Beltek66.GenericApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\Beltek66.HelloMvc\Beltek66.GenericApp\obj\Debug\net5.0\Beltek66.GenericApp.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\Beltek66.HelloMvc\Beltek66.GenericApp\obj\Debug\net5.0\Beltek66.GenericApp.AssemblyInfo.cs
+C:\Users\user\source\repos\Beltek66.HelloMvc\Beltek66.GenericApp\obj\Debug\net5.0\Beltek66.GenericApp.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Beltek66.HelloMvc\Beltek66.GenericApp\obj\Debug\net5.0\Beltek66.GenericApp.dll
+C:\Users\user\source\repos\Beltek66.HelloMvc\Beltek66.GenericApp\obj\Debug\net5.0\refint\Beltek66.GenericApp.dll
+C:\Users\user\source\repos\Beltek66.HelloMvc\Beltek66.GenericApp\obj\Debug\net5.0\Beltek66.GenericApp.pdb
+C:\Users\user\source\repos\Beltek66.HelloMvc\Beltek66.GenericApp\obj\Debug\net5.0\Beltek66.GenericApp.genruntimeconfig.cache
+C:\Users\user\source\repos\Beltek66.HelloMvc\Beltek66.GenericApp\obj\Debug\net5.0\ref\Beltek66.GenericApp.dll

@@ -1,0 +1,32 @@
+﻿
+@model Ogrenci
+@{
+    ViewData["Title"] = "OgrenciDetay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Ogrenci Detay</h1>
+
+<form class="form-group" asp-controller="Ogrenci" asp-action="OgrenciDetay" method="post">
+
+    <div class="mb-3">
+    <label asp-for="Ad" class="form-label"></label>
+    <input class="form-control" asp-for="Ad" type="text" />
+    </div>
+
+    <div class="mb-3">
+    <label for="Soyad" class="form-label">Soyad:</label>
+    <input class="form-control" asp-for="Soyad" type="text" />
+    </div>
+
+    <div class="mb-3">
+    <label asp-for="Yas" class="form-label"></label>
+    <input class="form-control" asp-for="Yas" type="number" />
+    </div>
+
+    <input asp-for="OgrenciId" type="hidden" />
+
+    <input type="submit" value="Güncelle" class="btn btn-outline-dark"  />
+
+
+</form>

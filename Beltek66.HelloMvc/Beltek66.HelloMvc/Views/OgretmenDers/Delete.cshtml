@@ -1,0 +1,34 @@
+﻿@model Beltek66.HelloMvc.Models.OgretmenDers
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Öğretmen Ders Atama Kayıt Silme</h1>
+
+<h3>Bunu silmek istediğinizden emin misiniz?</h3>
+<div>
+  
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ogretmen)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ogretmen.FullName)
+        </dd class>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ders)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ders.DersAd)
+        </dd class>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="OgretmenDersId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a class="link-secondary" asp-action="Index">Back to List</a>
+    </form>
+</div>
